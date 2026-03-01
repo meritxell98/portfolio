@@ -45,6 +45,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .column1 {
   grid-column: 1/2;
 }
