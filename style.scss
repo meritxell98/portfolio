@@ -65,6 +65,62 @@ body{
     grid-column: 2/2;
 }
 
+.projects {
+    width: 85%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  
+    &__image img {
+      width: 100%;
+      border-radius: 12px;
+    }
+  
+    &__content {
+      h3 {
+        margin-top: 0;
+        font-size: 1.6rem;
+      }
+  
+      p {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+    }
+  
+    &__tags {
+      margin-bottom: 1.5rem;
+  
+      span {
+        display: inline-block;
+        background: #f1f1f1;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+      }
+    }
+  
+    &__link {
+      text-decoration: none;
+      font-weight: 500;
+      color: #00c2ff;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
 /*FOOTER*/
 
 footer{
