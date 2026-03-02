@@ -123,6 +123,10 @@ body {
   text-decoration: underline;
 }
 
+.section__projects {
+  text-align: center;
+}
+
 /*FOOTER*/
 footer {
   background-color: #0f0f0f;
