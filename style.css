@@ -8,7 +8,10 @@ body {
   margin: 0;
 }
 
-.container {
+.section {
+  padding: 6rem 0;
+}
+.section__inner {
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
@@ -57,6 +60,13 @@ body {
 
 .column2 {
   grid-column: 2/2;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
 
 .projects {
