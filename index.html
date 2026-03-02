@@ -3,120 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta  name="author" content="Meritxell Jordan">
+    <meta name="author" content="Meritxell Jordan">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="#">Meritxell  Jordan</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container">
-        <section id="hero">
-            <h1>Meritxell Jordan</h1>
-            <p>UX/UI Designer with front-end foundations</p>
-        </section>
 
-        <section id="presentation">
-            <div class="column1">
-                <img src="" alt="">
+<header>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#hero">Meritxell Jordan</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section id="hero" class="section">
+        <div class="section__content">
+            <div class="section__text">
+                <h1>Meritxell Jordan</h1>
+                <p>UX/UI Designer with front-end foundations</p>
             </div>
-            <div  class="column2">
-                <h2>Hello</h2>
-                <p>UX/UI Designer with 2.5+ years of experience designing and implementing scalable web applications. Specialized in design systems, component-based architecture (Atomic Design), and front-end collaboration to ensure consistent and efficient product development.</p>
-            </div>
-        </section>
-        
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>Designed and customized web applications through scalable UI systems and reusable components.</li>
-                <li>Created and maintained HTML templates and dynamic interfaces using Handlebars.</li>
-                <li>Collaborated in Agile environments (SCRUM/Kanban) with developers and product managers to deliver iterative improvements.</li>
-                <li>Contributed to component-based design decisions aligned with Atomic Design principles.</li>
-            </ul>
-        </section>
-        
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>Understanding and implemantation of visual and interaction desing principles</p>
-            <div class="grid">
-            <ul class="column1">
-                <li>UX Research Fundamentals</li>
-                <li>UI/interaction Design</li>
-                <li>Wireframing</li>
-                <li>Prototyping</li>
-                <li>Atomic Design</li>
-            </ul>
-            <ul class="column2">
-                <li>Figma</li>
-                <li>Adobe CC (XD, Photoshop, Illustrator, Indesign)</li>
-                <li>HTML</li>
-                <li>CSS (Sass)</li>
-                <li>Bootstrap</li>
-                <li>Javascript</li>
-                <li>Tailwind</li>
-                <li>Handlebars</li>
-            </ul>
         </div>
-        </section>
-        
-        <section id="projects">
-            <h2>Projects</h2>
-        
-                <article>
-                    <h3>Moddy</h3>
-                    <p></p>
-                </article>
-        
-                <article>
-                    <h3>TFG</h3>
-                    <p></p>
-                </article>
+    </section>
 
-                <article>
-                    <h3>Museo del Cinema</h3>
-                    <p></p>
-                </article>
-        
-                <article>
-                    <div><img src="" alt=""></div>
-                    <div><h3>TFG</h3>
-                    <p></p></div>
-                </article>
-        
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <div>
-                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-                    <i data-lucide="linkedin" class="icon"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-                    <i data-lucide="folder" class="icon"></i>
-                </a>
-                  
-                <i data-lucide="folder" class="icon"></i>
+    <!-- PRESENTATION -->
+    <section id="presentation" class="section section--reverse">
+        <div class="section__content">
+            <div class="section__image">
+                <img src="img/about.jpg" alt="Working on interface design">
             </div>
-        
-        </section>
-        
-    </main>
-    <footer>
-        <p>All rights reserved</p>
-    </footer>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        lucide.createIcons();
-    </script>
+            <div class="section__text">
+                <h2>Hello</h2>
+                <p>
+                    UX/UI Designer with 2.5+ years of experience designing and implementing scalable web applications.
+                    Specialized in design systems, component-based architecture (Atomic Design), and front-end collaboration
+                    to ensure consistent and efficient product development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <div class="section__content">
+            <div class="section__image">
+                <img src="img/experience.jpg" alt="UI components and design system">
+            </div>
+            <div class="section__text">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Designed and customized web applications through scalable UI systems and reusable components.</li>
+                    <li>Created and maintained HTML templates and dynamic interfaces using Handlebars.</li>
+                    <li>Collaborated in Agile environments (SCRUM/Kanban) with developers and product managers.</li>
+                    <li>Contributed to component-based design decisions aligned with Atomic Design principles.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section--reverse">
+        <div class="section__content">
+            <div class="section__image">
+                <img src="img/skills.jpg" alt="Design and development tools">
+            </div>
+            <div class="section__text">
+                <h2>Skills</h2>
+                <p>Understanding and implementation of visual and interaction design principles.</p>
+
+                <div class="skills-grid">
+                    <ul>
+                        <li>UX Research Fundamentals</li>
+                        <li>UI / Interaction Design</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>Atomic Design</li>
+                    </ul>
+
+                    <ul>
+                        <li>Figma</li>
+                        <li>Adobe CC (XD, Photoshop, Illustrator, InDesign)</li>
+                        <li>HTML</li>
+                        <li>CSS (Sass)</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>Tailwind</li>
+                        <li>Handlebars</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- PROJECTS -->
+<section id="projects" class="section">
+    <div class="section__content">
+        <div class="section__text">
+            <h2>Projects</h2>
+        </div>
+    </div>
+
+    <div class="projects">
+
+        <article class="project">
+            <div class="project__image">
+                <img src="img/moddy.jpg" alt="Moddy project preview">
+            </div>
+
+            <div class="project__content">
+                <h3>Moddy</h3>
+                <p>
+                    Scalable UI system built using Atomic Design principles.
+                    Focused on reusable components and visual consistency.
+                </p>
+
+                <div class="project__tags">
+                    <span>Figma</span>
+                    <span>HTML</span>
+                    <span>Sass</span>
+                </div>
+
+                <a href="#" class="project__link">View Project →</a>
+            </div>
+        </article>
+
+
+        <article class="project project--reverse">
+            <div class="project__image">
+                <img src="img/tfg.jpg" alt="TFG project preview">
+            </div>
+
+            <div class="project__content">
+                <h3>TFG</h3>
+                <p>
+                    Research-based UX project focused on accessibility
+                    and interaction design for cultural institutions.
+                </p>
+
+                <div class="project__tags">
+                    <span>UX Research</span>
+                    <span>Prototyping</span>
+                    <span>Figma</span>
+                </div>
+
+                <a href="#" class="project__link">View Project →</a>
+            </div>
+        </article>
+
+
+        <article class="project">
+            <div class="project__image">
+                <img src="img/museo.jpg" alt="Museo del Cinema project preview">
+            </div>
+
+            <div class="project__content">
+                <h3>Museo del Cinema</h3>
+                <p>
+                    Website redesign focused on usability, improved information
+                    architecture and responsive layout.
+                </p>
+
+                <div class="project__tags">
+                    <span>UI Design</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="#" class="project__link">View Project →</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--reverse">
+        <div class="section__content">
+            <div class="section__image">
+                <img src="img/contact.jpg" alt="Contact illustration">
+            </div>
+            <div class="section__text">
+                <h2>Contact</h2>
+
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="linkedin" class="icon"></i>
+                    </a>
+
+                    <a href="#">
+                        <i data-lucide="folder" class="icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Meritxell Jordan. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+
 </body>
 </html>
