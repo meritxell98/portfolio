@@ -144,6 +144,25 @@ body{
     text-align: center;
   }
 
+  .project_image img{
+    max-height: 15rem;
+  }
+
+  .projects__intro {
+    background-color: $dark;
+    color: white;
+    padding: 4rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.projects__preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
 /*FOOTER*/
 
 footer{
