@@ -1,17 +1,21 @@
 /*VARIABLES*/
-html {
+html, body {
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
 }
 
-body {
-  margin: 0;
-}
-
-.section__hero {
+.section__dark {
   background-color: #313131;
   color: #ffffff;
   text-align: center;
+}
+.section__dark .section__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section {
@@ -21,6 +25,22 @@ body {
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
+}
+.section__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.section__image img {
+  width: 100%;
+  border-radius: 12px;
+}
+.section__text h2 {
+  margin-top: 0;
+}
+.section__text p {
+  line-height: 1.6;
 }
 
 .navbar {
@@ -128,10 +148,21 @@ body {
   margin-top: 3rem;
 }
 
+/*CONTACT*/
+.contact {
+  background-color: #313131;
+  color: #ffffff;
+}
+
+.icon {
+  color: #ffffff;
+}
+
 /*FOOTER*/
 footer {
-  background-color: #0f0f0f;
+  background-color: #313131;
   padding: 1rem 3rem;
+  text-align: center;
 }
 footer p {
   color: #ffffff;

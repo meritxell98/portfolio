@@ -4,20 +4,27 @@ $light: #ffffff;
 $accent: #00c2ff;
 $fontcolor:  #0f0f0f;
 
-html{
+html, body{
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
 }
 
-body{
-    margin: 0;
-}
 
-.section__hero{
+
+.section__dark {
     background-color: $dark;
     color: $light;
     text-align: center;
-}
+  
+    .section__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 
 // LAYOUT CONTAINER
 
@@ -170,11 +177,23 @@ body{
     margin-top: 3rem;
 }
 
+/*CONTACT*/
+
+.contact{
+    background-color: $dark;
+    color: $light;
+}
+
+.icon{
+    color: $light;
+}
+
 /*FOOTER*/
 
 footer{
-    background-color: #0f0f0f;
+    background-color: $dark;
     padding: 1rem 3rem;
+    text-align: center;
     p{
         color: $light;
     }
