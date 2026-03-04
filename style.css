@@ -167,6 +167,10 @@ html, body {
   opacity: 0.8;
 }
 
+.preview {
+  height: 300px;
+}
+
 /*CONTACT*/
 .contact {
   background-color: #313131;
