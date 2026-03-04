@@ -52,10 +52,9 @@ html, body {
   width: 100%;
 }
 .navbar .nav-list {
-  text-transform: capitalize;
   list-style: none;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -150,13 +149,12 @@ html, body {
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   background-color: #000;
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 500;
-  transition: 0.3s ease;
 }
 
 .btn:hover {
