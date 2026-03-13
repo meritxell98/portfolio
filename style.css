@@ -178,9 +178,14 @@ html, body {
   color: #ffffff;
 }
 
+.contact-icons a {
+  text-decoration: none;
+}
+
 .icon {
   color: #ffffff;
   padding: 0.5rem;
+  text-decoration: none;
 }
 
 /*FOOTER*/
@@ -261,8 +266,8 @@ footer p {
   }
   .icon {
     padding: 0.75rem;
-    min-width: 44px;
-    min-height: 44px;
+    min-width: 36px;
+    min-height: 36px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
