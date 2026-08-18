@@ -1,0 +1,229 @@
+/*
+  CASE STUDY STYLES
+  Shared stylesheet for all case study pages (component-library.html,
+  penguin-techno.html, etc). Uses the same variables and conventions
+  as the main portfolio style.scss so pages feel like one site.
+
+  USAGE: compile this to case-study.css and link it from every
+  case study HTML page, alongside (or instead of) style.css.
+*/
+
+/*VARIABLES — kept identical to style.scss so both compile to the same look*/
+$dark: #313131;
+$light: #ffffff;
+$accent: #88BDF2;
+$fontcolor: #0f0f0f;
+$muted: #6b6b6b;
+$border: #eaeaea;
+$tablet: 1023px;
+$mobile: 767px;
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  color: $fontcolor;
+}
+
+/* CASE STUDY HERO */
+.case-hero {
+  background-color: $dark;
+  color: $light;
+  padding: 9rem 0 4rem;
+  text-align: left;
+
+  &__inner {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__back {
+    display: inline-block;
+    color: $accent;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    font-size: 2.6rem;
+    margin: 0 0 0.5rem;
+    line-height: 1.15;
+  }
+
+  &__subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 2.5rem;
+    max-width: 640px;
+  }
+}
+
+/* META ROW: Role / Tools / Scope */
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1.75rem;
+
+  &__item {
+    dt {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: $accent;
+      margin: 0 0 0.4rem;
+    }
+
+    dd {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: $light;
+    }
+  }
+}
+
+/* BODY CONTENT */
+.case-body {
+  width: 85%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4.5rem 0;
+
+  section {
+    margin-bottom: 3.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid $border;
+  }
+
+  p {
+    line-height: 1.7;
+    color: $fontcolor;
+    margin: 0 0 1.1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* KEY DECISIONS LIST */
+.case-decisions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  li {
+    padding-left: 1.5rem;
+    border-left: 2px solid $accent;
+    line-height: 1.7;
+
+    strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 1.02rem;
+    }
+  }
+}
+
+/* REFLECTION / "WHAT I'D DO DIFFERENTLY" CALLOUT */
+.case-reflection {
+  background: #f7f9fc;
+  border-radius: 12px;
+  padding: 2rem;
+
+  h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+/* NDA / DISCLAIMER NOTE */
+.case-note {
+  font-size: 0.85rem;
+  color: $muted;
+  font-style: italic;
+  border-top: 1px solid $border;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+}
+
+
+/* MEDIA QUERIES */
+@include tablet {
+
+  .case-hero {
+    padding: 7rem 0 3rem;
+
+    h1 {
+      font-size: 2.1rem;
+    }
+  }
+
+  .case-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include mobile {
+  .case-hero__inner,
+  .case-body {
+    width: 90%;
+  }
+
+  .case-hero {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  .case-meta {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .case-body {
+    padding: 3rem 0;
+
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+
+  .case-reflection {
+    padding: 1.5rem;
+  }
+
+  
+}
