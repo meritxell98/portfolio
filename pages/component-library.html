@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Library — Meritxell Jordan</title>
+  <meta name="description" content="Case study: rebuilding a fragmented Adobe XD component library into a scalable, front-end-ready Figma design system.">
+  <link rel="stylesheet" href="case-study.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html#hero">Meritxell Jordan</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="case-hero">
+    <div class="case-hero__inner">
+      <a class="case-hero__back" href="index.html#projects">← Back to projects</a>
+      <h1>Component Library</h1>
+      <p class="case-hero__subtitle">Rebuilding a fragmented design system into a scalable, front-end-ready library.</p>
+
+      <dl class="case-meta">
+        <div class="case-meta__item">
+          <dt>Role</dt>
+          <dd>Sole designer, end to end</dd>
+        </div>
+        <div class="case-meta__item">
+          <dt>Tools</dt>
+          <dd>Figma (Variants, Auto Layout), Atomic Design</dd>
+        </div>
+        <div class="case-meta__item">
+          <dt>Scope</dt>
+          <dd>30+ components — buttons, inputs, selects, calendar system, checkboxes, radios, breadcrumbs, composite patterns</dd>
+        </div>
+      </dl>
+    </div>
+  </header>
+
+  <main class="case-body">
+
+    <section>
+      <h2>The problem</h2>
+      <p>The existing library lived in Adobe XD, not Figma — already a mismatch with how the rest of the team was working. Beyond the tooling gap, the file itself had no real structure: components weren't organized by type or hierarchy, naming was inconsistent, and the visual style was outdated relative to where the product had moved.</p>
+      <p>In practice, this meant designers couldn't trust or quickly find what they needed, so they'd end up recreating basics from scratch — leading to visual inconsistency across the product and duplicated work every time something needed updating. There was no single source of truth, and no shared tooling to build one in.</p>
+    </section>
+
+    <section>
+      <h2>My approach</h2>
+      <p>I rebuilt the library from scratch in Figma, migrating it off Adobe XD and using the move as an opportunity to fix the underlying structure rather than just porting old components over. I applied Atomic Design principles — starting from foundational tokens (color, spacing, type) and composing up through atoms (buttons, inputs) to composite patterns (selects, calendars, search fields) — and refreshed the visual language along the way so the library matched the current product, not the old one.</p>
+
+      <ul class="case-decisions">
+        <li>
+          <strong>Systematic sizing, not one-off variants.</strong>
+          Core components like buttons and inputs were built as full size scales (XS through XL) rather than single fixed instances — so product teams could pull the right density for a given context without creating a new component every time.
+        </li>
+        <li>
+          <strong>Consolidated states inside each component set.</strong>
+          Buttons, inputs, checkboxes, and radios each live as a single component set with every state (default, hover, disabled, focus) as variants — reducing the surface area designers had to search through and keeping states from drifting apart over time.
+        </li>
+        <li>
+          <strong>Built composite patterns on top of atoms, not from scratch.</strong>
+          More complex pieces — like the Search with Multiselect field, or the Calendar/date-picker system (with both compact and expanded layouts) — were assembled from the same base inputs and selects, so fixing an atom would propagate cleanly instead of requiring parallel fixes.
+        </li>
+        <li>
+          <strong>Named and structured for developer handoff, not just design.</strong>
+          Since I work with HTML/CSS/SCSS myself, I structured naming and hierarchy to map cleanly onto how these components would actually get built — reducing back-and-forth in implementation.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Outcome</h2>
+      <p>The result was a single, trustworthy source of components that replaced the old fragmented library. Designers had one place to work from instead of rebuilding basics; developers had a clearer, more consistent reference for implementation. It also directly shaped how I think about design work now — systems-first, with front-end feasibility built in from the start rather than bolted on later.</p>
+    </section>
+
+    <section class="case-reflection">
+      <h2>What I'd do differently</h2>
+      <p>If I did this again, I would share early component sets with the team, rather than waiting until thee library felt more complete. Since I had to redo the buttons component to unify all in a big component set. </p>
+    <p>In addition, looking back, I would map the most-used components from the old library, and prioritize rebuilding those first, that would have gotten the team off the outdated system faster.</p>
+    
+    </section>
+
+    <p class="case-note">Specific company and product details are withheld per NDA.</p>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Meritxell Jordan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
