@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*
+  CASE STUDY STYLES
+  Shared stylesheet for all case study pages (component-library.html,
+  penguin-techno.html, etc). Uses the same variables and conventions
+  as the main portfolio style.scss so pages feel like one site.
+
+  USAGE: compile this to case-study.css and link it from every
+  case study HTML page, alongside (or instead of) style.css.
+*/
+/*VARIABLES — kept identical to style.scss so both compile to the same look*/
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  color: #0f0f0f;
+}
+
+/* CASE STUDY HERO */
+.case-hero {
+  background-color: #313131;
+  color: #ffffff;
+  padding: 9rem 0 4rem;
+  text-align: left;
+}
+.case-hero__inner {
+  width: 85%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.case-hero__back {
+  display: inline-block;
+  color: #88BDF2;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.case-hero__back:hover {
+  text-decoration: underline;
+}
+.case-hero h1 {
+  font-size: 2.6rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.15;
+}
+.case-hero__subtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 2.5rem;
+  max-width: 640px;
+}
+
+/* META ROW: Role / Tools / Scope */
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1.75rem;
+}
+.case-meta__item dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #88BDF2;
+  margin: 0 0 0.4rem;
+}
+.case-meta__item dd {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* BODY CONTENT */
+.case-body {
+  width: 85%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4.5rem 0;
+}
+.case-body section {
+  margin-bottom: 3.5rem;
+}
+.case-body section:last-child {
+  margin-bottom: 0;
+}
+.case-body h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.case-body p {
+  line-height: 1.7;
+  color: #0f0f0f;
+  margin: 0 0 1.1rem;
+}
+.case-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* KEY DECISIONS LIST */
+.case-decisions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.case-decisions li {
+  padding-left: 1.5rem;
+  border-left: 2px solid #88BDF2;
+  line-height: 1.7;
+}
+.case-decisions li strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1.02rem;
+}
+
+/* REFLECTION / "WHAT I'D DO DIFFERENTLY" CALLOUT */
+.case-reflection {
+  background: #f7f9fc;
+  border-radius: 12px;
+  padding: 2rem;
+}
+.case-reflection h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* NDA / DISCLAIMER NOTE */
+.case-note {
+  font-size: 0.85rem;
+  color: #6b6b6b;
+  font-style: italic;
+  border-top: 1px solid #eaeaea;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1023px) {
+  .case-hero {
+    padding: 7rem 0 3rem;
+  }
+  .case-hero h1 {
+    font-size: 2.1rem;
+  }
+  .case-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .case-hero__inner,
+  .case-body {
+    width: 90%;
+  }
+  .case-hero h1 {
+    font-size: 1.7rem;
+  }
+  .case-meta {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .case-body {
+    padding: 3rem 0;
+  }
+  .case-body h2 {
+    font-size: 1.25rem;
+  }
+  .case-reflection {
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=case-study.css.map */
