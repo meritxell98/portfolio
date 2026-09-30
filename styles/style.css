@@ -172,22 +172,6 @@ html, body {
   height: 300px;
 }
 
-/*CONTACT*/
-.contact {
-  background-color: #313131;
-  color: #ffffff;
-}
-
-.contact-icons a {
-  text-decoration: none;
-}
-
-.icon {
-  color: #ffffff;
-  padding: 0.5rem;
-  text-decoration: none;
-}
-
 /*FOOTER*/
 footer {
   background-color: #313131;
