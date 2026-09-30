@@ -110,7 +110,8 @@ html, body {
 }
 .project__tags span {
   display: inline-block;
-  background: #f1f1f1;
+  color: #0f0f0f;
+  background-color: #ccbbef;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
