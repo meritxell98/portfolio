@@ -1,7 +1,9 @@
 /*VARIABLES*/
 $dark: #313131;
 $light: #ffffff;
-$accent: #88BDF2;
+$secondary: #88BDF2;
+$accent: #d0e969;
+$accent2: #ccbbef;
 $fontcolor:  #0f0f0f;
 $tablet: 1023px;
 $mobile: 767px;
@@ -88,7 +90,7 @@ html, body{
         position: relative;
     }
     a:hover {
-        color: $accent;
+        color: $secondary;
     }
 }
 
@@ -148,7 +150,7 @@ html, body{
     &__link {
       text-decoration: none;
       font-weight: 500;
-      color: $accent;
+      color: $secondary;
   
       &:hover {
         text-decoration: underline;
@@ -244,7 +246,7 @@ footer {
         transition: color 0.2s, opacity 0.2s;
 
         &:hover {
-            color: $accent;
+            color: $secondary;
             opacity: 1;
         }
     }
