@@ -9,13 +9,13 @@ html, body {
 .section__dark {
   background-color: #313131;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 .section__dark .section__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .section {
