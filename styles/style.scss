@@ -206,12 +206,47 @@ html, body{
 
 /*FOOTER*/
 
-footer{
+footer {
     background-color: $dark;
-    padding: 1rem 3rem;
-    text-align: center;
-    p{
+    color: $light;
+    padding: 4rem 3rem;
+
+    .footer__inner {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer__col {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        text-align: left;
+    }
+
+    h6 {
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         color: $light;
+    }
+
+    a {
+        color: $light;
+        text-decoration: none;
+        font-size: 0.95rem;
+        opacity: 0.8;
+        transition: color 0.2s, opacity 0.2s;
+
+        &:hover {
+            color: $accent;
+            opacity: 1;
+        }
     }
 }
 
@@ -258,7 +293,11 @@ footer{
     }
 
     footer {
-        padding: 1rem 1.5rem;
+        padding: 3rem 1.5rem;
+
+    .footer__inner {
+        gap: 5rem;
+    }
     }
 }
 
@@ -321,6 +360,10 @@ footer{
     }
 
     footer {
-        padding: 1rem;
+        padding: 2.5rem 1rem;
+
+    .footer__inner {
+        gap: 3rem;
+    }
     }
 }
