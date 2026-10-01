@@ -188,12 +188,6 @@ h1{
     text-align: center;
 }
 
-.projects__preview {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 3rem;
-}
 
 .btn {
     display: inline-block;
@@ -208,11 +202,6 @@ h1{
   .btn:hover {
     opacity: 0.8;
   }
-
-  .preview{
-    height: 300px;
-  }
-
 
 /*FOOTER*/
 
@@ -298,10 +287,6 @@ footer {
         }
     }
 
-    .projects__preview {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     footer {
         padding: 3rem 1.5rem;
 
@@ -349,15 +334,6 @@ footer {
         &__content {
             order: -1;
         }
-    }
-
-    .projects__preview {
-        grid-template-columns: 1fr;
-    }
-
-    .preview {
-        height: auto;
-        min-height: 200px;
     }
 
     .icon {
