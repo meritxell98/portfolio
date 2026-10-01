@@ -12,6 +12,13 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+.h2_project {
+  font-family: "Krona One", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .section__dark {
   background-color: #313131;
   color: #ffffff;
