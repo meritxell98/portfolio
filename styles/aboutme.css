@@ -5,25 +5,32 @@
   min-height: 100vh;
   box-sizing: border-box;
   display: flex;
-  align-items: start;
+  align-items: center;
 }
 .about .section__inner {
   width: 85%;
 }
-.about__text h1 {
+.about__header {
+  margin-bottom: 2rem;
+}
+.about__header h1 {
   color: #ffffff;
   margin-bottom: 1rem;
 }
-.about__text h2 {
+.about__header h2 {
   display: inline-block;
+  margin: 0;
   font-size: 1.4rem;
   padding: 0.4rem 1rem;
-  margin-bottom: 1.5rem;
   color: #0f0f0f;
   background-color: #d0e969;
   border-radius: 20px;
 }
+.about .section__content {
+  align-items: center;
+}
 .about__text p {
+  margin: 0;
   font-size: 1.1rem;
   line-height: 1.7;
   max-width: 32rem;
@@ -57,7 +64,7 @@
   .about .section__inner {
     width: 90%;
   }
-  .about__text h1 {
+  .about__header h1 {
     font-size: 2rem;
   }
   .about__image img {

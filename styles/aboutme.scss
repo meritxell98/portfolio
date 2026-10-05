@@ -10,7 +10,6 @@ $mobile: 767px;
 
 /* ABOUT ME PAGE */
 .about {
-    // leave room for the fixed navbar
     padding-top: 9rem;
     min-height: 100vh;
     box-sizing: border-box;
@@ -40,7 +39,6 @@ $mobile: 767px;
         }
     }
 
-    // photo and paragraph share the same row, so they line up with each other
     .section__content {
         align-items: center; // use "start" to align the tops instead
     }
