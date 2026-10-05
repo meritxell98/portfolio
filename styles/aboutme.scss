@@ -21,7 +21,9 @@ $mobile: 767px;
         width: 85%;
     }
 
-    &__text {
+    &__header {
+        margin-bottom: 2rem;
+
         h1 {
             color: $light;
             margin-bottom: 1rem;
@@ -29,15 +31,23 @@ $mobile: 767px;
 
         h2 {
             display: inline-block;
+            margin: 0;
             font-size: 1.4rem;
             padding: 0.4rem 1rem;
-            margin-bottom: 1.5rem;
             color: $fontcolor;
             background-color: $accent;
             border-radius: 20px;
         }
+    }
 
+    // photo and paragraph share the same row, so they line up with each other
+    .section__content {
+        align-items: center; // use "start" to align the tops instead
+    }
+
+    &__text {
         p {
+            margin: 0;
             font-size: 1.1rem;
             line-height: 1.7;
             max-width: 32rem;
@@ -87,7 +97,7 @@ $mobile: 767px;
             width: 90%;
         }
 
-        &__text h1 {
+        &__header h1 {
             font-size: 2rem;
         }
 
