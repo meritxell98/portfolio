@@ -6,16 +6,29 @@ html, body {
   font-family: "Inter", sans-serif;
 }
 
+h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.h2_project {
+  font-family: "Krona One", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .section__dark {
   background-color: #313131;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 .section__dark .section__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .section {
@@ -39,6 +52,7 @@ html, body {
 }
 .section__text h2 {
   margin-top: 0;
+  font-size: 1.4rem;
 }
 .section__text p {
   line-height: 1.6;
@@ -110,7 +124,8 @@ html, body {
 }
 .project__tags span {
   display: inline-block;
-  background: #f1f1f1;
+  color: #0f0f0f;
+  background-color: #ccbbef;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -147,13 +162,6 @@ html, body {
   text-align: center;
 }
 
-.projects__preview {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -166,10 +174,6 @@ html, body {
 
 .btn:hover {
   opacity: 0.8;
-}
-
-.preview {
-  height: 300px;
 }
 
 /*FOOTER*/
@@ -233,9 +237,6 @@ footer a:hover {
   .project__content {
     order: -1;
   }
-  .projects__preview {
-    grid-template-columns: repeat(2, 1fr);
-  }
   footer {
     padding: 3rem 1.5rem;
   }
@@ -273,13 +274,6 @@ footer a:hover {
   }
   .project__content {
     order: -1;
-  }
-  .projects__preview {
-    grid-template-columns: 1fr;
-  }
-  .preview {
-    height: auto;
-    min-height: 200px;
   }
   .icon {
     padding: 0.75rem;

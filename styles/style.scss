@@ -1,7 +1,9 @@
 /*VARIABLES*/
 $dark: #313131;
 $light: #ffffff;
-$accent: #88BDF2;
+$secondary: #88BDF2;
+$accent: #d0e969;
+$accent2: #ccbbef;
 $fontcolor:  #0f0f0f;
 $tablet: 1023px;
 $mobile: 767px;
@@ -13,18 +15,31 @@ html, body{
     font-family: 'Inter', sans-serif;
 }
 
+h1{
+    font-family: 'Krona One', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.h2_project{
+    font-family: 'Krona One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
 
 
 .section__dark {
     background-color: $dark;
     color: $light;
-    text-align: center;
+    text-align: left;
   
     .section__content {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      flex-direction: row;
     }
   }
 
@@ -55,6 +70,7 @@ html, body{
     &__text {
       h2 {
         margin-top: 0;
+        font-size: 1.4rem;
       }
   
       p {
@@ -88,7 +104,7 @@ html, body{
         position: relative;
     }
     a:hover {
-        color: $accent;
+        color: $secondary;
     }
 }
 
@@ -137,7 +153,8 @@ html, body{
   
       span {
         display: inline-block;
-        background: #f1f1f1;
+        color: $fontcolor;
+        background-color: $accent2;
         padding: 0.4rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
@@ -148,7 +165,7 @@ html, body{
     &__link {
       text-decoration: none;
       font-weight: 500;
-      color: $accent;
+      color: $secondary;
   
       &:hover {
         text-decoration: underline;
@@ -178,12 +195,6 @@ html, body{
     text-align: center;
 }
 
-.projects__preview {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 3rem;
-}
 
 .btn {
     display: inline-block;
@@ -198,11 +209,6 @@ html, body{
   .btn:hover {
     opacity: 0.8;
   }
-
-  .preview{
-    height: 300px;
-  }
-
 
 /*FOOTER*/
 
@@ -244,7 +250,7 @@ footer {
         transition: color 0.2s, opacity 0.2s;
 
         &:hover {
-            color: $accent;
+            color: $secondary;
             opacity: 1;
         }
     }
@@ -286,10 +292,6 @@ footer {
         &__content {
             order: -1;
         }
-    }
-
-    .projects__preview {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     footer {
@@ -339,15 +341,6 @@ footer {
         &__content {
             order: -1;
         }
-    }
-
-    .projects__preview {
-        grid-template-columns: 1fr;
-    }
-
-    .preview {
-        height: auto;
-        min-height: 200px;
     }
 
     .icon {
