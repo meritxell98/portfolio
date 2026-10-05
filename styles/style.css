@@ -58,6 +58,62 @@ h1 {
   line-height: 1.6;
 }
 
+.hero__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.2rem;
+  color: #d0e969;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+.hero__link-arrow {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.hero__link:hover, .hero__link:focus-visible {
+  color: #ffffff;
+  border-bottom-color: #d0e969;
+}
+.hero__link:hover .hero__link-arrow, .hero__link:focus-visible .hero__link-arrow {
+  transform: translateX(6px);
+}
+
+.scroll-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem 0 0;
+  border: 2px solid #d0e969;
+  border-radius: 50%;
+  color: #d0e969;
+  text-decoration: none;
+  animation: bounce 2s ease-in-out infinite;
+  transition: background-color 0.2s, color 0.2s;
+}
+.scroll-down:hover, .scroll-down:focus-visible {
+  background-color: #d0e969;
+  color: #313131;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-down {
+    animation: none;
+  }
+}
 .navbar {
   background-color: #313131;
   padding: 1.2rem 3rem;

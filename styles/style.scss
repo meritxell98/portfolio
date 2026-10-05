@@ -79,6 +79,68 @@ h1{
     }
   }
 
+// HERO LINK
+.hero__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    color: $accent;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+
+    &-arrow {
+        display: inline-block;
+        transition: transform 0.2s;
+    }
+
+    &:hover,
+    &:focus-visible {
+        color: $light;
+        border-bottom-color: $accent;
+
+        .hero__link-arrow {
+            transform: translateX(6px);
+        }
+    }
+}
+
+// SCROLL DOWN ARROW
+.scroll-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 0 0;
+    border: 2px solid $accent;
+    border-radius: 50%;
+    color: $accent;
+    text-decoration: none;
+    animation: bounce 2s ease-in-out infinite;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover,
+    &:focus-visible {
+        background-color: $accent;
+        color: $dark;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(10px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-down {
+        animation: none;
+    }
+}
+
 .navbar{
     background-color: $dark;
     padding: 1.2rem 3rem;
