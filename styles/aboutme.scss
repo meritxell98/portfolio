@@ -1,0 +1,98 @@
+/*VARIABLES (same as style.scss)*/
+$dark: #313131;
+$light: #ffffff;
+$secondary: #88BDF2;
+$accent: #d0e969;
+$accent2: #ccbbef;
+$fontcolor: #0f0f0f;
+$tablet: 1023px;
+$mobile: 767px;
+
+/* ABOUT ME PAGE */
+.about {
+    // leave room for the fixed navbar
+    padding-top: 9rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+    .section__inner {
+        width: 85%;
+    }
+
+    &__text {
+        h1 {
+            color: $light;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            display: inline-block;
+            font-size: 1.4rem;
+            padding: 0.4rem 1rem;
+            margin-bottom: 1.5rem;
+            color: $fontcolor;
+            background-color: $accent;
+            border-radius: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            max-width: 32rem;
+        }
+    }
+
+    &__image {
+        margin: 0;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 26rem;
+            margin: 0 auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 4px solid $accent2;
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@include tablet {
+    .about {
+        padding-top: 7rem;
+        min-height: auto;
+    }
+}
+
+@include mobile {
+    .about {
+        padding-top: 6rem;
+
+        .section__inner {
+            width: 90%;
+        }
+
+        &__text h1 {
+            font-size: 2rem;
+        }
+
+        &__image img {
+            max-width: 100%;
+        }
+    }
+}
