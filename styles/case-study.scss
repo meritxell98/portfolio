@@ -3,7 +3,6 @@ $light: #FFFAFA;
 $accent: #d0e969;
 $accent2: #ccbbef;
 $fontcolor: #0f0f0f;
-$muted: #6b6b6b;
 $border: #eaeaea;
 $tablet: 1023px;
 $mobile: 767px;
@@ -159,15 +158,6 @@ html, body {
   }
 }
 
-/* NDA / DISCLAIMER NOTE */
-.case-note {
-  font-size: 0.85rem;
-  color: $muted;
-  font-style: italic;
-  border-top: 1px solid $border;
-  padding-top: 1.5rem;
-  margin-top: 3rem;
-}
 
 
 /* MEDIA QUERIES */

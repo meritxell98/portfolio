@@ -121,16 +121,6 @@ html, body {
   padding-bottom: 0;
 }
 
-/* NDA / DISCLAIMER NOTE */
-.case-note {
-  font-size: 0.85rem;
-  color: #6b6b6b;
-  font-style: italic;
-  border-top: 1px solid #eaeaea;
-  padding-top: 1.5rem;
-  margin-top: 3rem;
-}
-
 /* MEDIA QUERIES */
 @media (max-width: 1023px) {
   .case-hero {
