@@ -20,7 +20,7 @@ html, body {
 /* CASE STUDY HERO */
 .case-hero {
   background-color: #313131;
-  color: #ffffff;
+  color: #FFFAFA;
   padding: 9rem 0 4rem;
   text-align: left;
 }
@@ -31,7 +31,7 @@ html, body {
 }
 .case-hero__back {
   display: inline-block;
-  color: #88BDF2;
+  color: #d0e969;
   text-decoration: none;
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
@@ -63,14 +63,14 @@ html, body {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #88BDF2;
+  color: #d0e969;
   margin: 0 0 0.4rem;
 }
 .case-meta__item dd {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.5;
-  color: #ffffff;
+  color: #FFFAFA;
 }
 
 /* BODY CONTENT */
@@ -112,7 +112,7 @@ html, body {
 }
 .case-decisions li {
   padding-left: 1.5rem;
-  border-left: 2px solid #88BDF2;
+  border-left: 2px solid #ccbbef;
   line-height: 1.7;
 }
 .case-decisions li strong {

@@ -10,8 +10,9 @@
 
 /*VARIABLES — kept identical to style.scss so both compile to the same look*/
 $dark: #313131;
-$light: #ffffff;
-$accent: #88BDF2;
+$light: #FFFAFA;
+$accent: #d0e969;
+$accent2: #ccbbef;
 $fontcolor: #0f0f0f;
 $muted: #6b6b6b;
 $border: #eaeaea;
@@ -146,7 +147,7 @@ html, body {
 
   li {
     padding-left: 1.5rem;
-    border-left: 2px solid $accent;
+    border-left: 2px solid $accent2;
     line-height: 1.7;
 
     strong {
