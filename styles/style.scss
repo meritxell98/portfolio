@@ -260,6 +260,7 @@ h1{
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
+    border: 1px solid $light;
     background-color: $dark;
     color:$light;
     text-decoration: none;
@@ -268,13 +269,15 @@ h1{
   }
   
   .btn:hover {
-    opacity: 0.8;
+    background-color: $accent;
+    color: $dark;
+    border: 1px solid $dark;
 }
 
 .btn2 {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: $accent;
+    background-color: $light;
     color: $dark;
     border: 1px solid $dark;
     text-decoration: none;
@@ -282,8 +285,10 @@ h1{
     font-weight: 500;
   }
   
-  .btn:hover {
-    opacity: 0.8;
+  .btn2:hover {
+    border: 1px solid $dark;
+    background-color: $accent;
+    color:$dark;
   }
 
 

@@ -221,6 +221,7 @@ h1 {
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
+  border: 1px solid #FFFAFA;
   background-color: #313131;
   color: #FFFAFA;
   text-decoration: none;
@@ -229,13 +230,15 @@ h1 {
 }
 
 .btn:hover {
-  opacity: 0.8;
+  background-color: #d0e969;
+  color: #313131;
+  border: 1px solid #313131;
 }
 
 .btn2 {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #d0e969;
+  background-color: #FFFAFA;
   color: #313131;
   border: 1px solid #313131;
   text-decoration: none;
@@ -243,8 +246,10 @@ h1 {
   font-weight: 500;
 }
 
-.btn:hover {
-  opacity: 0.8;
+.btn2:hover {
+  border: 1px solid #313131;
+  background-color: #d0e969;
+  color: #313131;
 }
 
 /*FOOTER*/
