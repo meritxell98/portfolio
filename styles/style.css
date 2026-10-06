@@ -21,7 +21,7 @@ h1 {
 
 .section__dark {
   background-color: #313131;
-  color: #ffffff;
+  color: #FFFAFA;
   text-align: left;
 }
 .section__dark .section__content {
@@ -75,7 +75,7 @@ h1 {
   transition: transform 0.2s;
 }
 .hero__link:hover, .hero__link:focus-visible {
-  color: #ffffff;
+  color: #FFFAFA;
   border-bottom-color: #d0e969;
 }
 .hero__link:hover .hero__link-arrow, .hero__link:focus-visible .hero__link-arrow {
@@ -131,7 +131,7 @@ h1 {
 }
 .navbar a {
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFAFA;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
   padding: 0.5rem 1rem;
@@ -235,7 +235,7 @@ h1 {
 /*FOOTER*/
 footer {
   background-color: #313131;
-  color: #ffffff;
+  color: #FFFAFA;
   padding: 4rem 3rem;
 }
 footer .footer__inner {
@@ -258,10 +258,10 @@ footer h6 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #FFFAFA;
 }
 footer a {
-  color: #ffffff;
+  color: #FFFAFA;
   text-decoration: none;
   font-size: 0.95rem;
   opacity: 0.8;
