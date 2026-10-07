@@ -52,6 +52,43 @@ $mobile: 767px;
         }
     }
 
+    &__cv {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.6rem 1.4rem;
+        font-weight: 700;
+        color: $fontcolor;
+        background-color: $accent;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $accent2;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        gap: 1.25rem;
+        margin: 1.5rem 0 0;
+        padding: 0;
+        list-style: none;
+
+        a {
+            display: inline-flex;
+            color: $light;
+            transition: color 0.2s ease, transform 0.2s ease;
+
+            &:hover,
+            &:focus-visible {
+                color: $accent;
+                transform: translateY(-2px);
+            }
+        }
+    }
+
     &__image {
         margin: 0;
 
