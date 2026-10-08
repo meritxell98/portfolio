@@ -35,6 +35,36 @@
   line-height: 1.7;
   max-width: 32rem;
 }
+.about__cv {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.4rem;
+  font-weight: 700;
+  color: #0f0f0f;
+  background-color: #d0e969;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.about__cv:hover, .about__cv:focus-visible {
+  background-color: #ccbbef;
+}
+.about__socials {
+  display: flex;
+  gap: 1.25rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.about__socials a {
+  display: inline-flex;
+  color: #FFFAFA;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.about__socials a:hover, .about__socials a:focus-visible {
+  color: #d0e969;
+  transform: translateY(-2px);
+}
 .about__image {
   margin: 0;
 }

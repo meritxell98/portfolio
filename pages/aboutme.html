@@ -14,14 +14,21 @@
     <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-             <li><a href="../index.html#hero">Meritxell Jordan</a></li>
-            <li><a href="../index.html#projects">Projects</a></li>
-            <li><a href="./pages/aboutme.html">About Me</a></li>
-            <li><a href="media/Jordan_Meritxell_CV_2026.pdf" target="_blank">Resume</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-list">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#hero">Meritxell Jordan</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="./pages/aboutme.html">About Me</a></li>
+                <li><a href="media/Jordan_Meritxell_CV_2026.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="section section__dark about">
             <div class="section__inner">
@@ -37,8 +44,22 @@
                     
                         <p>My background in Translation and Interpreting gives me a global and cross-cultural perspective, allowing me to design digital experiences that communicate clearly and resonate with diverse audiences.</p> <br>
                     
-                        <p>I believe that strong design systems, clear communication, and collaborative workflows are key to building reliable, user-focused products. I thrive in environments that value ownership, continuous learning, and cross-functional teamwork.</p>
-                    
+                        <p>I believe that strong design systems, clear communication, and collaborative workflows are key to building reliable, user-focused products. I thrive in environments that value ownership, continuous learning, and cross-functional teamwork.</p> <br>
+
+                        <a href="../media/Jordan_Meritxell_CV_2026.pdf" target="_blank" class="hero__link">Check my CV</a>
+
+                        <ul class="about__socials">
+                            <li>
+                                <a href="media/Jordan_Meritxell_CV_2026.pdf" target="_blank" rel="noopener" aria-label="Behance">
+                                    <svg viewBox="0 0 32 24" width="36" height="28" fill="currentColor" aria-hidden="true"><text x="16" y="19" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-1">B&#275;</text></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/meritxelljordan/"  target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div>
                         <figure class="section__image about__image">
@@ -49,5 +70,7 @@
             </div>
         </section>
     </main>
+    <script src="../script.js"></script>
 </body>
+
 </html>
