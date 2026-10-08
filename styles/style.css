@@ -310,9 +310,6 @@ footer a:hover {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .project__content {
-    order: -1;
-  }
   footer {
     padding: 3rem 1.5rem;
   }
@@ -331,7 +328,12 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
   .section__image img {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+  }
+  .section__dark .section__content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
   }
   .navbar {
     padding: 0.75rem 1rem;
@@ -347,9 +349,6 @@ footer a:hover {
   .project {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-  .project__content {
-    order: -1;
   }
   .icon {
     padding: 0.75rem;
