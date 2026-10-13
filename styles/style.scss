@@ -187,10 +187,10 @@ h1{
 .projects {
     width: 85%;
     max-width: 1200px;
-    margin: 4rem auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 4rem;
   }
   
   .project {
@@ -428,7 +428,7 @@ footer {
 
     .projects {
         width: 90%;
-        margin: 3rem auto;
+        margin: 0 auto;
         gap: 3rem;
     }
 
