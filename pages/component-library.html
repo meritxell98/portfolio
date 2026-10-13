@@ -56,7 +56,7 @@
 
     <section>
       <h2>The problem</h2>
-      <p>The existing library lived in Adobe XD, not Figma — already a mismatch with how the rest of the team was working. Beyond the tooling gap, the file itself had no real structure: components weren't organized by type or hierarchy, naming was inconsistent, and the visual style was outdated relative to where the product had moved.</p>
+      <p>The existing library lived in Adobe XD, not Figma, already a mismatch with how the rest of the team was working. Beyond the tooling gap, the file itself had no real structure: components weren't organized by type or hierarchy, naming was inconsistent, and the visual style was outdated relative to where the product had moved.</p>
       <p>In practice, this meant designers couldn't trust or quickly find what they needed, so they'd end up recreating basics from scratch — leading to visual inconsistency across the product and duplicated work every time something needed updating. There was no single source of truth, and no shared tooling to build one in.</p>
     </section>
 
@@ -67,26 +67,26 @@
       <ul class="case-decisions">
         <li>
           <strong>Systematic sizing, not one-off variants.</strong>
-          Core components like buttons and inputs were built as full size scales (XS through XL) rather than single fixed instances — so product teams could pull the right density for a given context without creating a new component every time.
+          Core components like buttons and inputs were built as full size scales (XS through XL) rather than single fixed instances. So product teams could pull the right density for a given context without creating a new component every time.
         </li>
         <li>
           <strong>Consolidated states inside each component set.</strong>
-          Buttons, inputs, checkboxes, and radios each live as a single component set with every state (default, hover, disabled, focus) as variants — reducing the surface area designers had to search through and keeping states from drifting apart over time.
+          Buttons, inputs, checkboxes, and radios each live as a single component set with every state (default, hover, disabled, focus) as variants- This reduces the surface area designers had to search through and keeping states from drifting apart over time.
         </li>
         <li>
           <strong>Built composite patterns on top of atoms, not from scratch.</strong>
-          More complex pieces — like the Search with Multiselect field, or the Calendar/date-picker system (with both compact and expanded layouts) — were assembled from the same base inputs and selects, so fixing an atom would propagate cleanly instead of requiring parallel fixes.
+          More complex pieces, like the Search with Multiselect field, or the Calendar/date-picker system (with both compact and expanded layouts). The components were assembled from the same base inputs and selects, so fixing an atom would propagate cleanly instead of requiring parallel fixes.
         </li>
         <li>
           <strong>Named and structured for developer handoff, not just design.</strong>
-          Since I work with HTML/CSS/SCSS myself, I structured naming and hierarchy to map cleanly onto how these components would actually get built — reducing back-and-forth in implementation.
+          Since I work with HTML/CSS/SCSS myself, I structured naming and hierarchy to map cleanly onto how these components would actually get built,  reducing back-and-forth in implementation. Using variants and tokens to keep the library flexible and ready to hand-off to develepers. 
         </li>
       </ul>
     </section>
 
     <section>
       <h2>Outcome</h2>
-      <p>The result was a single, trustworthy source of components that replaced the old fragmented library. Designers had one place to work from instead of rebuilding basics; developers had a clearer, more consistent reference for implementation. It also directly shaped how I think about design work now — systems-first, with front-end feasibility built in from the start rather than bolted on later.</p>
+      <p>The result was a single, trustworthy source of components that replaced the old fragmented library. Designers had one place to work from instead of rebuilding basics; developers had a clearer, more consistent reference for implementation. It also directly shaped how I think about design work now, systems-first, with front-end feasibility built in from the start rather than bolted on later.</p>
     </section>
 
 
