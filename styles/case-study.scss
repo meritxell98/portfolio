@@ -158,6 +158,111 @@ html, body {
   }
 }
 
+/* CASE STUDY IMAGES
+   Usage: <figure class="case-image case-image--wide case-image--shadow">
+   Modifiers can be combined freely. */
+.case-image {
+  margin: 2.5rem 0;
+  width: 100%;
+
+  img,
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  &__caption {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: rgba($fontcolor, 0.6);
+    text-align: center;
+  }
+
+  /* Width: default is the text column (900px) */
+  &--narrow {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--wide {
+    // breaks out of the text column, up to 1200px
+    width: min(1200px, 92vw);
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--full {
+    // edge to edge of the viewport
+    width: 100vw;
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img,
+    video {
+      border-radius: 0;
+    }
+  }
+
+  /* Style */
+  &--bordered img {
+    border: 1px solid $border;
+  }
+
+  &--shadow img {
+    box-shadow: 0 12px 40px rgba($dark, 0.15);
+  }
+
+  &--square img {
+    border-radius: 0;
+  }
+
+  &--bg {
+    background: $border;
+    padding: 2rem;
+    border-radius: 12px;
+
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  &--accent {
+    background: rgba($accent2, 0.35);
+    padding: 2rem;
+    border-radius: 12px;
+
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  /* Aspect ratio (crops with object-fit) */
+  &--16x9 img { aspect-ratio: 16 / 9; object-fit: cover; }
+  &--4x3 img  { aspect-ratio: 4 / 3;  object-fit: cover; }
+  &--1x1 img  { aspect-ratio: 1 / 1;  object-fit: cover; }
+}
+
+/* Side-by-side images */
+.case-image-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+
+  .case-image {
+    margin: 0;
+  }
+
+  &--2 { grid-template-columns: repeat(2, 1fr); }
+  &--3 { grid-template-columns: repeat(3, 1fr); }
+}
 
 
 /* MEDIA QUERIES */
@@ -172,6 +277,10 @@ html, body {
   }
 
   .case-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .case-image-grid--3 {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -205,5 +314,17 @@ html, body {
     padding: 1.5rem;
   }
 
-  
+  .case-image {
+    margin: 2rem 0;
+
+    &--bg,
+    &--accent {
+      padding: 1rem;
+    }
+  }
+
+  .case-image-grid--2,
+  .case-image-grid--3 {
+    grid-template-columns: 1fr;
+  }
 }

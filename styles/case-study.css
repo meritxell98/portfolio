@@ -121,6 +121,116 @@ html, body {
   padding-bottom: 0;
 }
 
+/* CASE STUDY IMAGES
+   Usage: <figure class="case-image case-image--wide case-image--shadow">
+   Modifiers can be combined freely. */
+.case-image {
+  margin: 2.5rem 0;
+  width: 100%;
+}
+.case-image img,
+.case-image video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.case-image__caption {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(15, 15, 15, 0.6);
+  text-align: center;
+}
+.case-image {
+  /* Width: default is the text column (900px) */
+}
+.case-image--narrow {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.case-image--wide {
+  width: min(1200px, 92vw);
+  max-width: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.case-image--full {
+  width: 100vw;
+  max-width: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.case-image--full img,
+.case-image--full video {
+  border-radius: 0;
+}
+.case-image {
+  /* Style */
+}
+.case-image--bordered img {
+  border: 1px solid #eaeaea;
+}
+.case-image--shadow img {
+  box-shadow: 0 12px 40px rgba(49, 49, 49, 0.15);
+}
+.case-image--square img {
+  border-radius: 0;
+}
+.case-image--bg {
+  background: #eaeaea;
+  padding: 2rem;
+  border-radius: 12px;
+}
+.case-image--bg img {
+  border-radius: 8px;
+}
+.case-image--accent {
+  background: rgba(204, 187, 239, 0.35);
+  padding: 2rem;
+  border-radius: 12px;
+}
+.case-image--accent img {
+  border-radius: 8px;
+}
+.case-image {
+  /* Aspect ratio (crops with object-fit) */
+}
+.case-image--16x9 img {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.case-image--4x3 img {
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.case-image--1x1 img {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Side-by-side images */
+.case-image-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+.case-image-grid .case-image {
+  margin: 0;
+}
+.case-image-grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.case-image-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1023px) {
   .case-hero {
@@ -130,6 +240,9 @@ html, body {
     font-size: 2.1rem;
   }
   .case-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+  .case-image-grid--3 {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -153,5 +266,15 @@ html, body {
   }
   .case-reflection {
     padding: 1.5rem;
+  }
+  .case-image {
+    margin: 2rem 0;
+  }
+  .case-image--bg, .case-image--accent {
+    padding: 1rem;
+  }
+  .case-image-grid--2,
+  .case-image-grid--3 {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=case-study.css.map */
