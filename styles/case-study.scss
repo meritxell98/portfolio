@@ -159,9 +159,10 @@ html, body {
 }
 
 /* CASE STUDY IMAGES
-   Usage: <figure class="case-image case-image--wide case-image--shadow">
+   Usage: <figure class="case-image case-image--shadow">
    Modifiers can be combined freely. */
 .case-image {
+  box-sizing: border-box;
   margin: 2.5rem 0;
   width: 100%;
 
@@ -181,34 +182,11 @@ html, body {
     text-align: center;
   }
 
-  /* Width: default is the text column (900px) */
+  /* Width: always the text column (900px), unless --narrow */
   &--narrow {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  &--wide {
-    // breaks out of the text column, up to 1200px
-    width: min(1200px, 92vw);
-    max-width: none;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  &--full {
-    // edge to edge of the viewport
-    width: 100vw;
-    max-width: none;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-
-    img,
-    video {
-      border-radius: 0;
-    }
   }
 
   /* Style */
